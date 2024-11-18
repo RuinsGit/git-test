@@ -1,0 +1,145 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background: linear-gradient(135deg, #000, #131513, #424233, #504a12); /* Siyah, Yeşil, Sarı Geçişi */
+    color: white;
+    flex-wrap: wrap;
+    gap: 30px;
+    transition: all 0.3s ease;
+    margin-top: 5%;
+}
+
+footer .footer-section {
+    width: 22%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #3afc0d;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: #ddd;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #45ff07;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    padding: 10px;
+    background-color: #0dfa17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #182848;
+}
+
+footer .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+footer .footer-section:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}
+
+
+.language-selector select {
+    padding: 8px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+footer .footer-bottom p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .footer-section:nth-child(4) {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,336 @@
+
+.container-x{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.ana-bolum-tam {
+    background: linear-gradient(to right, #064106, #077007, #08ab08, #85f80a);
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+}
+
+.ana-bolum-basliq {
+    font-size: 3rem;
+    animation: slideUp 2s ease-in-out;
+}
+
+.ana-bolum-metn {
+    font-size: 1.25rem;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+.cta-duymesi-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+.cta-duymesi-button:hover {
+    background-color: #005f7f;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.xidmet-kart-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.xidmet-kart-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.xidmet-kart-basliq {
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.xidmet-kart-metn {
+    color: #555;
+    font-size: 1rem;
+}
+
+.xidmet-kart-img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.xidmet-kart-container:hover .xidmet-kart-img {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+
+.ugur-kart-container {
+    transition: all 0.5s ease;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ugur-kart-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+
+.animasiya-arxa-plan {
+    background-color: #f3f4f6;
+    position: relative;
+    z-index: 0;
+}
+
+.animasiya-arxa-plan::after {
+    content: '';
+    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    animation: bgMove 10s infinite linear;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+.btn-xususi-container {
+    background-color: #f39c12;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-xususi-container:hover {
+    background-color: #00ff00;
+}
+
+
+
+
+
+
+
+
+.cointer-in {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /*background-color: #888888;*/
+    position: relative;
+}
+
+.cointer {
+    width: 100%;
+    height: max-content;
+    /*background-color: #00ff00;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: lime;*/
+    margin: 5% auto;
+    background-image: url("../images/r3-bg-img-1.webp");
+    /*height: max-content;*/
+    /*background-color: #008CBA;*/
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+
+.slider-qabi {
+    display: flex;
+    overflow: hidden;
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slayd {
+    flex: 0 0 auto;
+    width: 30%;
+    padding: 10px;
+    position: relative;
+    transform: scale(0.9);
+    animation: slideIn 1s ease-out;
+    height: 550px;
+
+}
+
+.slayd-img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    height: 60%;
+}
+
+.slayd:hover .slayd-img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+
+#geri-duyme, #ireli-duyme {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#geri-duyme:hover, #ireli-duyme:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.xidmet-kart-metn{
+    font-size: 20px;
+}
+
+#geri-duyme {
+    left: 10px;
+}
+
+#ireli-duyme {
+    right: 10px;
+}
+
+
+
+
+
+
+.container-y{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    /*background-color: lime;*/
+margin-top: 5%;
+}
+
+/*.img-box-size-1{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    height: max-content;*/
+/*    !*width: 25%;*!*/
+
+/*}*/
+
+.office-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    height: max-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.office-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.office-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.office-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.office-card p {
+    margin-bottom: 8px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.office-card .fa-instagram {
+    font-size: 1.5rem;
+    color: #d6249f;
+}
+
+
+@media (max-width: 768px) {
+    .slayd {
+        width: 100%;
+    }
+
+    .slider-qabi {
+        overflow: hidden;
+        width: 460px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .slayd {
+        width: 50%;
+    }
+
+}
+
+
+@keyframes slideIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+

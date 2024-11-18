@@ -1,0 +1,162 @@
+body {
+    background-color: #f8f9fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.office-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.office-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.office-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.office-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.office-card p {
+    margin-bottom: 8px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.office-card .fa-instagram {
+    font-size: 1.5rem;
+    color: #d6249f;
+}
+
+
+
+
+
+
+
+
+
+
+/* Genel stil */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+/* Flexbox düzeni için */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Her bir kolon için stil */
+.col-lg-3, .col-md-6, .col-12 {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+/* Resimlerin boyutunu eşitle ve profesyonel görünüm sağla */
+img.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resimlerin orantılı şekilde kesilmesini sağlar */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Gölgeli efekt */
+}
+
+/* Başlıkların stilini düzenle */
+h3 a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+h3 a:hover {
+    color: #007bff; /* Başlık üzerine gelindiğinde renk değişir */
+}
+
+/* Tarih bilgisi stili */
+ul.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 5px;
+}
+
+ul.list-inline .list-inline-item {
+    color: #888;
+    font-size: 0.875rem;
+}
+
+/* Ekran genişliğine göre responsive düzen */
+@media (min-width: 1200px) {
+    .col-lg-3 {
+        width: 23%; /* Ekran büyük olduğunda 4 resim yan yana */
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .col-md-6 {
+        width: 48%; /* Orta büyüklükte ekranlarda 2 resim yan yana */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-12 {
+        width: 100%; /* Küçük ekranlarda her resim tek başına */
+    }
+}
+
+/* Responsive olarak tüm görselleri ortalamak için */
+@media (max-width: 1200px) {
+    .row {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
